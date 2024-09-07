@@ -1,56 +1,29 @@
-# HarMe(Harmony-Melodies) - 생성형 AI를 활용한 작곡 서비스
-
-![image](https://github.com/user-attachments/assets/1c1de10c-a6b3-403f-8e70-d4e952830d67)
-
+# HarMe(Harmony-Melodies) 👵🏻🎵
 https://github.com/user-attachments/assets/ec7ac9de-3d87-4f96-bc89-a59ac0f62c24
-
-# 📌 목차
-
-- [README](#readme)
-
-  - [🤔 기획 배경](#-기획-배경)
-  - [💡 주요 기능](#-주요-기능)
-  - [🚧 시스템 아키텍쳐](#-시스템-아키텍쳐)
-  - [📝 설계 문서](#-설계-문서)
-    - ERD
-    - 기능 명세서
-    - Swagger
-  - [🛠 기술 스택](#-기술-스택)
-  - [📂 파일 구조](#-파일-구조)
-  - [🐰 팀원 소개](#-팀원-소개)
-
-<br>
-<br>
-
-## 📅 프로젝트 진행 기간
-
-| 프로젝트 진행 기간 | 2024.07.26 ~ 2024.08.02 (총 1주) |
-| ------------------ | -------------------------------- |
 
 <br><br>
 
 ## 🤔 기획 배경
-
 - 음악이 우울증 해소에 긍정적 영향을 미친다는 연구를 바탕으로 노년층의 우울증 증가를 해결하기 위해 본 서비스를 기획<br>
 - Google Cloud Platform, OpenAI, Suno AI를 활용하여 음성 인식, 가사 생성, 그림 생성, 노래 생성을 지원하는 서비스를 제공<br>
 - 이를 통해 노년층의 정서적 안정, 사회적 연결, 인지 기능 향상, 자아실현을 도모하고자 함<br>
-  <br><br>
+<br><br>
 
 ## 💡 주요 기능
-
-<img src="https://github.com/user-attachments/assets/e897a9a1-d882-4e23-a57c-d7866e3c393b" width="80%"></img>
+<img src="https://github.com/user-attachments/assets/e897a9a1-d882-4e23-a57c-d7866e3c393b" width="100%"></img>
+#### 프롬프트 입력이 어려운 노인세대에게 음성명령을 통해 쉽게 음악을 생성하고 공유하는 경험을 제공
+- 사용자의 음성 명령어 받기
+- 사용자의 음성 명령어 교정
+- 요청에 맞는 가사 작성 (ChatGPT)
+- 요청에 맞는 음원 생성 (Suno AI)
+- 요청에 맞는 앨범커버 제작 (DALLE)
 <br><br>
 
 ## 🎙️ 서비스 화면
-
-#### 프롬프트 입력이 어려운 노인세대에게 음성명령을 통해 쉽게 음악을 생성하고 공유하는 경험을 제공
-
-<br>
-
 ### 1. 작곡 기능
 
-<img src=https://github.com/user-attachments/assets/1686b56b-fbfe-4fd1-905e-caa9900c36ce width="180" height="420"></img>
-<img src="/MakingImage.gif" width="180" height="420"></img>
+<img src=https://github.com/user-attachments/assets/1686b56b-fbfe-4fd1-905e-caa9900c36ce width="360" height="840"></img>
+<img src="/MakingImage.gif" width="360" height="840"></img>
 <br>
 
 <!--
@@ -62,25 +35,24 @@ https://github.com/user-attachments/assets/ec7ac9de-3d87-4f96-bc89-a59ac0f62c24
 
 ### 2. 앨범 만들기
 
-<img src=https://github.com/user-attachments/assets/18168dba-fa6d-4d2e-87a2-6999a12dce64 width="180" height="420"></img>
-<img src="/images/makeImage.gif" width="180" height="420"></img>
+<img src=https://github.com/user-attachments/assets/18168dba-fa6d-4d2e-87a2-6999a12dce64 width="360" height="840"></img>
+<img src="/images/makeImage.gif" width="360" height="840"></img>
 <br>
 
 ### 3. 기록 기능
 
-<img src=https://github.com/user-attachments/assets/af1157b8-2670-4406-b410-2c97381ee5fe width="180" height="420"></img>
-<img src=https://github.com/user-attachments/assets/40921391-281b-4ee2-bc2b-a89e0f131bf5 width="190" height="420"></img>
-<br>
+<img src=https://github.com/user-attachments/assets/af1157b8-2670-4406-b410-2c97381ee5fe width="360" height="840"></img>
+<img src=https://github.com/user-attachments/assets/40921391-281b-4ee2-bc2b-a89e0f131bf5 width="420" height="840"></img>
+<br><br>
 
 ## 🚧 시스템 아키텍쳐
 
 <img src="./images/Harme-SystemArchitecture.png">
-
-<br>
+<br><br>
 
 ## 🔗 설계 문서
 
-### 🔗 [ERD]
+### ERD
 
 <img src="./images/Harme-erd.png">
 
@@ -88,29 +60,19 @@ https://github.com/user-attachments/assets/ec7ac9de-3d87-4f96-bc89-a59ac0f62c24
 
 ### 🔗 [Swagger](http://43.201.54.73:8081/swagger-ui/index.html)
 
-<br>
+<br><br>
 
 ## 🛠 기술 스택
 
-### 🥕 Backend
+| tech   | version                 |
+| ------ | -------------------- |
+| <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" /> | 17.0.9 <br>         |
+| <img src="https://img.shields.io/badge/Springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" /> | 3.3.2 <br>         |
+| <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" /> | 8.0.34 <br>            |
+| <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" /> |  <br>            |
+| <img src="https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=fff&style=for-the-badge" /> |  <br> |
+<br>
 
-- ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) : 17.0.9
-- ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=green) : 3.3.2
-- ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=blue) : 8.0.34
-  <br>
-
-### 🥝 Frontend
-
-- ![Next.js](https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=fff&style=for-the-badge) : 14.2.5
-- ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) : 18
-  <br>
-
-### 🫐 협업 툴
-
-- ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=black)
-- ![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=navy)
-- ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
-  <br>
 
 ## 📂 파일 구조
 
@@ -248,10 +210,10 @@ https://github.com/user-attachments/assets/ec7ac9de-3d87-4f96-bc89-a59ac0f62c24
 
 | 이름   | 역할                 |
 | ------ | -------------------- |
-| 김민태 | - Leader, AI <br>    |
-| 석지원 | - UI/UX <br>         |
-| 오승태 | - FE <br>            |
-| 김현진 | - BE <br>            |
-| 이대영 | - BE, AI, Infra <br> |
+| 김민태 | Leader, AI <br>    |
+| 석지원 | UI/UX <br>         |
+| 오승태 | FE <br>            |
+| 김현진 | BE <br>            |
+| 이대영 | BE, AI, Infra <br> |
 
 <br>
